@@ -12,8 +12,6 @@
   var storage = "";
 
 
-
-
   try {
     storage = localStorage.getItem("login");
   } catch (err) {
@@ -72,10 +70,14 @@
 
   window.addEventListener("keydown", function  (evt) {
     if (evt.keyCode === 27) {
-        if (popup_map.classList.contains("modal-show")) {
-           evt.pteventDefault();
-           popup_map.classList.remove("modal-show");
-        }
+      if (popup_map.classList.contains("modal-show")) {
+        evt.pteventDefault();
+        popup_map.classList.remove("modal-show");
+      }
+      if (popup_map.classList.contains("modal-show")) {
+        evt.pteventDefault();
+        popup_map.classList.remove("modal-show");
+      }
     }
   });
 
