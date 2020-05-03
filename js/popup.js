@@ -39,8 +39,8 @@
     if (evt.keyCode === 27) {
       if (popup.classList.contains("modal-show")) {
         evt.preventDefault();
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
       }
       if (popup_map.classList.contains("modal-show")) {
         popup_map.classList.remove("modal-show");
@@ -70,8 +70,4 @@
     evt.preventDefault();
     popup_map.classList.remove("modal-show");
   });
-
-
-
-
 
